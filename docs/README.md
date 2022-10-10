@@ -25,7 +25,7 @@ We have developed a new component called SRv6 Policy Injector (SRv6 PI).
 ### Source code
 
 - The SRv6 overlay code has been merged in the mainstream Calico-VPP
-- SRv6 Policy Injector (SRv6 PI) is available at:
+- SRv6 Policy Injector (SRv6 PI) is available [here](https://github.com/zvfvrv/SRv6-PI)
 
 <!--- example of figure
       always put the link to the img source (e.g. gslide):
