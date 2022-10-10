@@ -16,7 +16,33 @@ The SRv6 overlay can be used instead of the IP-in-IP overlay. The SRv6 overlay s
 - Encapsulation of both IPv4 and IPv6 pods networking
 - Traffic Engineering of the overlay tunnels
 
-We have developed a new component called SRv6 Policy Injector (SRv6 PI).
+We have deployed the proposed SRv6 overlay in two replicable virtual testbeds, which we refer to as _basic testbed_ and _full testbed_.
+The _basic testbed_ only demonstrates SRv6 tunneling equivalent to IP-in-IP tunneling. The _full testbed_ demonstrates Traffic Engineering 
+capabilities. 
+
+In the _full testbed_ we have implemented two solutions to distributed the SRv6 Traffic Engineering policies:
+
+- using BGP, for which we have developed a new component called SRv6 Policy Injector (SRv6 PI)
+- using Kubernetes control plane 
+
+### Walkthrough
+
+We have described the steps to replicate the testbeds and execute the experiments in [this document](https://tiny.one/srv6-calico-vpp), which has the following content:
+
+- _Basic Testbed:_ SRv6 basic scenario (no Traffic Engineering)	
+   - Environment Setup
+   - Configure and install Calico VPP
+   - Test SRv6 connectivity between pods
+- _Full Testbed:_ SRv6 overlay with Traffic Engineering (SRv6-TE)
+   - Environment Setup	
+   - SRv6-TE overlay with BGP
+       - Configure and deploy
+       - Test SRv6 connectivity between pods
+       - Test SRv6-TE edit policies	
+   - SRv6-TE overlay with Kubernetes control plane
+       - Configure and deploy
+       - Test SRv6 connectivity between pods
+       - Test SRv6-TE edit policies
 
 ### Scientific papers
 
@@ -24,8 +50,9 @@ We have developed a new component called SRv6 Policy Injector (SRv6 PI).
 
 ### Source code
 
-- The SRv6 overlay code has been merged in the mainstream Calico-VPP
+- The SRv6 overlay code for Calico has been merged in the mainstream Calico-VPP code repository, we refer to [our fork]()
 - SRv6 Policy Injector (SRv6 PI) is available [here](https://github.com/zvfvrv/SRv6-PI)
+- The repository with the scripts to setup the testbeds is available [here]()
 
 <!--- example of figure
       always put the link to the img source (e.g. gslide):
