@@ -20,14 +20,14 @@ We have deployed the proposed SRv6 overlay in two replicable virtual testbeds, w
 The _basic testbed_ only demonstrates SRv6 tunneling equivalent to IP-in-IP tunneling. The _full testbed_ demonstrates Traffic Engineering 
 capabilities. 
 
-In the _full testbed_ we have implemented two solutions to distributed the SRv6 Traffic Engineering policies:
+In the _full testbed_ we consider two solutions to distribute the SRv6 Traffic Engineering policies:
 
-- using BGP, for which we have developed a new component called SRv6 Policy Injector (SRv6 PI)
-- using Kubernetes control plane 
+- use BGP, for which we have developed a new component called SRv6 Policy Injector (SRv6 PI)
+- use Kubernetes control plane 
 
 ### Walkthrough
 
-We have described the steps to replicate the testbeds and execute the experiments in [this document](https://tiny.one/srv6-calico-vpp), which has the following content:
+We have described the steps to replicate the testbeds and execute the experiments in this [walkthrough document](https://tiny.one/srv6-calico-vpp). We report its table of content:
 
 - _Basic Testbed:_ SRv6 basic scenario (no Traffic Engineering)	
    - Environment Setup
@@ -52,7 +52,7 @@ We have described the steps to replicate the testbeds and execute the experiment
 
 - The SRv6 overlay code for Calico has been merged in the mainstream Calico-VPP code repository, we refer to [our fork]()
 - SRv6 Policy Injector (SRv6 PI) is available [here](https://github.com/zvfvrv/SRv6-PI)
-- The repository with the scripts to setup the testbeds is available [here]()
+- The repository with the walkthrough scripts is available [here]()
 
 <!--- example of figure
       always put the link to the img source (e.g. gslide):
