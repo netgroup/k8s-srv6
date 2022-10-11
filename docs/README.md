@@ -46,7 +46,9 @@ We have described the steps to replicate the testbeds and execute the experiment
 
 ### Scientific papers
 
-- F. Lombardo, S. Salsano, A. Abdelsalam, C. Filsfils, "[Extending Kubernetes Networking to make use of Segment Routing over IPv6 (SRv6)]()", Submitted paper, October 2022
+- F. Lombardo, S. Salsano, A. Abdelsalam, C. Filsfils, <br>
+"[Extending Kubernetes Networking to make use of Segment Routing over IPv6 (SRv6)]()", <br>
+Submitted paper, October 2022
 
 ### Source code
 
